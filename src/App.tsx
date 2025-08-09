@@ -50,9 +50,15 @@ export default function App() {
       <div className="container mx-auto max-w-4xl p-4 md:p-8">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl md:text-3xl">
-              Termos de Responsabilidade e Solicitação de Acessos
-            </CardTitle>
+            <div className="flex flex-col items-center space-y-4 mb-4">
+              {/* Logo da empresa */}
+              <div className="flex items-center justify-center w-24 h-24 bg-primary rounded-lg">
+                <span className="text-primary-foreground font-bold text-2xl">LOGO</span>
+              </div>
+              <CardTitle className="text-2xl md:text-3xl text-center">
+                Termos de Responsabilidade e Solicitação de Acessos
+              </CardTitle>
+            </div>
           </CardHeader>
 
           <CardContent className="space-y-6">
