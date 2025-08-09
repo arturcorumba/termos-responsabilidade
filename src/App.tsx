@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoSvg from "@/assets/logo.svg";
 
 // Imports shadcn/ui — ajuste os paths se seu setup não usar "@/components/ui/*"
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
@@ -52,9 +53,11 @@ export default function App() {
           <CardHeader>
             <div className="flex flex-col items-center space-y-4 mb-4">
               {/* Logo da empresa */}
-              <div className="flex items-center justify-center w-24 h-24 bg-primary rounded-lg">
-                <span className="text-primary-foreground font-bold text-2xl">LOGO</span>
-              </div>
+              <img 
+                src={logoSvg} 
+                alt="Logo da empresa" 
+                className="w-32 h-auto"
+              />
               <CardTitle className="text-2xl md:text-3xl text-center">
                 Termos de Responsabilidade e Solicitação de Acessos
               </CardTitle>
